@@ -1,0 +1,28 @@
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.headerMain a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  font-size: 15px;
+  color: rgb(32, 32, 32);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.headerMain_right {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+
+  .MuiAvatar-root {
+    margin-left: 20px;
+  }
+}

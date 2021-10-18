@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Regular;
+  src: url(./fonts/Regular.ttf);
+}
+
+.pagination {
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: Regular;
+  cursor: pointer;
+
+  .MuiSvgIcon-root {
+    color: #4386f4;
+  }
+
+  span {
+    margin-right: 2px;
+  }
+
+  .o {
+    color: #fbbc05;
+    margin-top: 15px;
+    margin-right: 2px !important;
+    span {
+      color: #4386f4;
+      font-size: 14px;
+      font-weight: 500;
+
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+  .g {
+    margin-left: 3px;
+    color: #4386f4;
+  }
+  .l {
+    color: #74c389;
+  }
+  .e {
+    color: #ea4335;
+  }
+}
+
+.pagination_prev,
+.pagination_next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+  span {
+    color: #4386f4;
+    font-size: 14px;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.activePage {
+  color: #ea4335 !important;
+}

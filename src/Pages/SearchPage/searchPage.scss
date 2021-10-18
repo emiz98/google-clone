@@ -1,0 +1,16 @@
+.searchPage_content {
+  display: flex;
+  flex: 1;
+}
+
+.searchPage_left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6 !important;
+}
+
+.searchPage_right {
+  display: flex;
+  flex: 0.3 !important;
+  align-items: flex-start;
+}
