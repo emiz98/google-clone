@@ -1,11 +1,13 @@
 export const initialState = {
   term: null,
   PageNum: 0,
+  OverlayActive: false,
 };
 
 export const actionTypes = {
   SET_SEARCH_TERM: "SET_SEARCH_TERM",
   SET_PAGE_NUM: "SET_PAGE_NUM",
+  SET_OVERLAY: "SET_OVERLAY",
 };
 
 const reducer = (state, action) => {
@@ -21,6 +23,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         PageNum: action.PageNum,
+      };
+    case actionTypes.SET_OVERLAY:
+      return {
+        ...state,
+        OverlayActive: action.OverlayActive,
       };
 
     default:

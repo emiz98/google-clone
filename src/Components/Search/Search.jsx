@@ -6,10 +6,10 @@ import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 import "./search.scss";
 
-const Search = ({ hideButtons = false }) => {
-  const [{ term }, dispatch] = useStateValue();
+const Search = ({ value, hideButtons = false }) => {
+  const [{ OverlayActive, term }, dispatch] = useStateValue();
   const history = useHistory();
-  const [Input, setInput] = useState("");
+  const [Input, setInput] = useState(value);
 
   const search = (e) => {
     e.preventDefault();
@@ -25,6 +25,13 @@ const Search = ({ hideButtons = false }) => {
     history.push("/search");
   };
 
+  const triggerOverlay = () => {
+    dispatch({
+      type: actionTypes.SET_OVERLAY,
+      OverlayActive: true,
+    });
+  };
+
   return (
     <form className="search">
       <div className="search_input">
@@ -34,7 +41,11 @@ const Search = ({ hideButtons = false }) => {
           value={Input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <img className="search_input_mic" src="./mic.png" alt="" />
+        <img
+          className="search_input_mic"
+          src="./mic.png"
+          onClick={triggerOverlay}
+        />
       </div>
       {!hideButtons ? (
         <>

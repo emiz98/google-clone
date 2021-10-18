@@ -15,3 +15,48 @@
     height: 90px;
   }
 }
+
+@-webkit-keyframes listen {
+  0% {
+    -webkit-transform: scale(0.5);
+  }
+  25% {
+    -webkit-transform: scale(0.25);
+  }
+  35% {
+    -webkit-transform: scale(0.1);
+  }
+  65% {
+    -webkit-transform: scale(0.35);
+  }
+  80% {
+    -webkit-transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(0.25);
+  }
+}
+
+.search_overlay {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  display: flex;
+  .search_overlay_left {
+    margin: auto;
+    font-size: 40px;
+    color: rgb(129, 129, 129);
+  }
+  .search_overlay_right {
+    margin: auto;
+    padding: 25px;
+    background-color: #ea4335;
+    border-radius: 150px;
+
+    .MuiSvgIcon-root {
+      font-size: 125px;
+      color: white;
+    }
+    box-shadow: 10px black;
+    // border: 60px solid rgb(112, 112, 112);
+  }
+}
