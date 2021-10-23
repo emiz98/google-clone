@@ -24,6 +24,8 @@ jobs:
         run: |
           yarn install
           yarn build
+        env:
+          CI: false
       - name: Archive Build
         uses: actions/upload-artifact@v2
         with:
@@ -41,9 +43,7 @@ jobs:
         with:
           name: build
           path: build
-        env:
-          CI: false
-      - name: Depoy to Firebase
+      - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
