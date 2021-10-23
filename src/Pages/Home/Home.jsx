@@ -40,6 +40,10 @@ const Home = () => {
           type: actionTypes.SET_OVERLAY,
           OverlayActive: false,
         });
+        dispatch({
+          type: actionTypes.SET_SEARCH_TERM,
+          term: transcript,
+        });
       }, 5000);
     }
   }, [transcript, OverlayActive]);

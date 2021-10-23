@@ -11,8 +11,7 @@ const SearchResults = ({ data, searchInfo, term }) => {
         <div className="searchResults_results">
           <p className="results_count">
             About {searchInfo?.formattedTotalResults} results (
-            {searchInfo?.formattedSearchTime} seconds) for
-            {term}
+            {searchInfo?.formattedSearchTime} seconds) for {term}
           </p>
 
           {data?.map((item) => (
