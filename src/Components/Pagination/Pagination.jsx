@@ -14,7 +14,7 @@ const Pagination = () => {
       PageNum: i - 1,
     });
     console.log(PageNum);
-    if (i == staticCount[5]) {
+    if (i === staticCount[5]) {
       console.log("middle");
       // staticCount.push(staticCount.at(-1) + 1);
       // staticCount.shift();
@@ -41,7 +41,7 @@ const Pagination = () => {
       <span className="g">G</span>
       {staticCount.map((i) => (
         <span
-          className={`o ${PageNum == i - 1 && "activePage"}`}
+          className={`o ${PageNum === i - 1 && "activePage"}`}
           onClick={(e) => pageClick(i)}
         >
           o <span>{i}</span>

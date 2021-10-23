@@ -23,7 +23,7 @@ const KnowledgePanel = ({ data }) => {
 
   return (
     <>
-      {data?.title != "N/A" && (
+      {data?.title !== "N/A" && (
         <>
           <div className="knowledgePanel">
             <div className="knowledgePanel_image_grid">
@@ -52,16 +52,16 @@ const KnowledgePanel = ({ data }) => {
             </div>
             <hr />
             <div className="knowledgePanel_content">
-              {data?.description != "N/A" && <p>{data?.description}</p>}
+              {data?.description !== "N/A" && <p>{data?.description}</p>}
 
               <div>
                 {keys?.map(
                   (key) =>
-                    typeof data[key] != "object" &&
-                    key != "title" &&
-                    key != "description" &&
-                    key != "sub_title" &&
-                    key != "link" && (
+                    typeof data[key] !== "object" &&
+                    key !== "title" &&
+                    key !== "description" &&
+                    key !== "sub_title" &&
+                    key !== "link" && (
                       <div className="knowledgePanel_content_bold" key={key}>
                         <span>{simpleToCapital(key)}:</span> {data[key]}
                       </div>

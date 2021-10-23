@@ -45,6 +45,7 @@ const Search = ({ value, hideButtons = false }) => {
           className="search_input_mic"
           src="./mic.png"
           onClick={triggerOverlay}
+          alt="mic"
         />
       </div>
       {!hideButtons ? (
