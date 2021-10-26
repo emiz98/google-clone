@@ -11,8 +11,12 @@ const HeaderMain = () => {
         <Link to="/store">Store</Link>
       </div>
       <div className="headerMain_right">
-        <Link to="/gmail">Gmail</Link>
-        <Link to="/images">Images</Link>
+        <Link to="/gmail" className="headerMain_right_text">
+          Gmail
+        </Link>
+        <Link to="/images" className="headerMain_right_text">
+          Images
+        </Link>
         <Apps />
         <Avatar src="https://avatars.githubusercontent.com/u/64089619?v=4" />
       </div>

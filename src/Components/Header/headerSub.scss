@@ -104,3 +104,19 @@
     }
   }
 }
+
+@media screen and(max-width:1200px) {
+}
+@media screen and(max-width:768px) {
+  .headerSub_left {
+    flex-direction: column;
+  }
+  .headerSub_right {
+    position: absolute;
+    right: 5px;
+  }
+}
+@media screen and(max-width:480px) {
+}
+@media screen and(max-width:0px) {
+}

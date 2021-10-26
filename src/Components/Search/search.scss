@@ -84,3 +84,42 @@
     }
   }
 }
+
+@media screen and(max-width:1200px) {
+}
+@media screen and(max-width:768px) {
+  .search_input_mic {
+    padding-right: 10px;
+  }
+  .searchResults_header_search > .search > .search_input {
+    margin-top: 20px !important;
+    width: 75vw !important;
+  }
+  .searchPage {
+    overflow: hidden;
+  }
+  .searchResults_options {
+    overflow: scroll;
+    width: 85vw;
+  }
+  .searchResults_options::-webkit-scrollbar {
+    display: none;
+  }
+  .searchPage_content {
+    flex-direction: column-reverse !important;
+  }
+  .knowledgePanel {
+    max-width: 350px !important;
+    margin: 20px 2px !important;
+  }
+  .searchPage_right {
+    justify-content: space-around;
+  }
+  .searchResults_results {
+    margin: 0 !important;
+  }
+}
+@media screen and(max-width:480px) {
+}
+@media screen and(max-width:0px) {
+}
