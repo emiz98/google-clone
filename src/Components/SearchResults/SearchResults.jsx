@@ -4,7 +4,7 @@ import { useStateValue } from "../../StateProvider";
 import "./searchResults.scss";
 
 const SearchResults = ({ data, searchInfo, term }) => {
-  console.log(data);
+
   return (
     <div className="searchResults">
       {true && (

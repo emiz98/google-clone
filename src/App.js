@@ -13,7 +13,6 @@ function App() {
             <Home />
           </Route>
           <Route path="/search">
-            {/* <SearchResults /> */}
             <SearchPage />
           </Route>
         </Switch>
